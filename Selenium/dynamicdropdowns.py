@@ -20,6 +20,7 @@ list_values = driver.find_elements(By.CSS_SELECTOR,"li[class='ui-menu-item']")
 for value in list_values:
     if value.text == 'France':
         value.click()
+        print(value.text)
         break
 time.sleep(3)
 driver.find_element(By.CSS_SELECTOR,"select[id='ctl00_mainContent_ddl_originStation1']").click()
