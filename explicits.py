@@ -28,7 +28,7 @@ driver.find_element(By.XPATH,"//button[text()='Apply']").click()
 wait = WebDriverWait(driver,10)
 wait.until(expected_conditions.presence_of_element_located((By.CSS_SELECTOR,"span[class='promoInfo']")))
 m = driver.find_element(By.CSS_SELECTOR,"span[class='promoInfo']").text
-
+#wait1 = FluentWait()
 print(m)
 assert m == "Code applied ..!"
 driver.find_element(By.XPATH,"//div[@class='products']/div/button").click()

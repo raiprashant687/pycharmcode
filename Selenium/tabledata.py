@@ -11,7 +11,7 @@ so = Service("C:/Users/prashant/Downloads/chromedriver/chromedriver.exe")
 driver = webdriver.Chrome(service=so)
 driver.implicitly_wait(3)
 driver.get("https://rahulshettyacademy.com/seleniumPractise/#/")
-driver.find_element(By.XPATH,"//input[@type='search']").send_keys("to")
+driver.find_element(By.XPATH,"//input[@type='search']").send_keys("a")
 time.sleep(4)
 step1 = driver.find_elements(By.XPATH,"//div[@class='products']/div")
 for steps in step1:
