@@ -36,3 +36,6 @@ final_re = float(sum - dicountamount)
 result = driver.find_element(By.CSS_SELECTOR,"span[class='discountAmt']").text
 print(result,final_re)
 assert final_re == float(result)
+
+#newchecks
+driver.switch_to.alert
